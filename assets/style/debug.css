@@ -47,16 +47,38 @@
     background-color: orange;
 }
 
-@media screen and (min-width:768){
+@media screen and (min-width:420px){
+    /* mobile */
+
+    .col-12{
+        width: 100%;
+    }
     
 }
 
-@media screen and (min-width: 1024px)
-{
+@media screen and (min-width:768px){
+    /* tablet */
+
+    .col-md-8{
+        width: calc(100%/12*8);
+    }
+    .col-md-4{
+        width: calc(100%/12*4);
+    }
+    .col-md-6{
+        width: calc(100%/12*6);
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+    /* laptop */
+
 
 }
 
-@media screen and (min-width: 1440px)
-{
+@media screen and (min-width: 1440px){
+    /* desktop */
+
 
 }

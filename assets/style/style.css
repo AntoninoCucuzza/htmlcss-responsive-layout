@@ -11,7 +11,7 @@
 
 /* #region utility */
 
-.col-4{
+/* .col-4{
     width: calc(100%/12*4);
 }
 
@@ -23,8 +23,7 @@
     width: calc(100%/12*8);
 }
 
-.col-12{
-    width: 100%;
-}
+} */
+
 /* /col- */
 /* #region utility */
