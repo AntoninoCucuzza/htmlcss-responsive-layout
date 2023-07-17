@@ -124,6 +124,16 @@ a{
     font-size: 1.5rem;
     line-height: 3rem;
 }
+
+.fix{
+    flex-direction: column;
+}
+
+.fix> h2{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+
+}
 /* #endregion Partners */
 
 
@@ -170,6 +180,7 @@ display:none;
     height: 150px;
     width: 150px;
     object-fit: cover;
+    margin: 1rem;
 }
 /* /img */
 
@@ -272,6 +283,14 @@ display:none;
     .card_introduction{
         height: 100%;
         margin-bottom: 0;
+    }
+
+    .card_partners{
+        flex-direction: row;
+    }
+    .fix{
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     /* #region utility */
