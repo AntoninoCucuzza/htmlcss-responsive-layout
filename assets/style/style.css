@@ -1,27 +1,146 @@
+/* #region common */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --rsp-primary: #9792E4;
+    --rsp-secondary: #FFFFFF;
+    --rsp-heanvenly: #0084FD;
+    --rsp-light-heanvenly: #B5DDFF;
+    --rsp-special: #FDC15F;
+    --rsp-footer: #333333;
+    --rsp-white: #fff;
+    --rsp-black: #000 ;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+nav{
+    background-color: var(--rsp-heanvenly);
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+/* #endregion common */
+
+/* #region header */
+.hamburger{
+    color: var(--rsp-white);
+}
+.a-white{
+    color: var(--rsp-white);
+}
+.a-black{
+    color: var(--rsp-black);
+}
+/* #endregion header */
 
 
 
 
 /* #region utility */
 
-/* .col-4{
-    width: calc(100%/12*4);
+.list-unstyled {
+	list-style: none;
 }
 
-.col-6{
-    width: calc(100%/12*6);
+.list-inline {
+    display: flex;
+    gap: 1rem;
 }
 
-.col-8{
-    width: calc(100%/12*8);
+/* /list */
+
+.d-none{
+display:none;
 }
 
-} */
+.d-block{
+    display: block;
+}
+/* /display */
+
 
 /* /col- */
+.d-flex{
+    display: flex;
+}
+.space-btw{
+    justify-content: space-between;
+}
+.space-center{
+    justify-content: center;
+}
+.align-items{
+    align-items: center;
+}
+/* /flex */
+.btn{
+    padding: 0.5rem;
+    border-radius: 25px;
+}
+.btn-started{
+    background-color: var(--rsp-white);
+}
+/* /btn */
 /* #region utility */
+
+/* #region responsive */
+
+@media screen and (min-width:420px){
+    /* mobile */
+
+    .col-12{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width:768px){
+    /* tablet */
+    .container{
+        width: 100%;
+        max-width: 1024px;
+    }
+
+    .col-md-8{
+        width: calc(100%/12*8);
+    }
+
+    .col-md-4{
+        width: calc(100%/12*4);
+    }
+
+    .col-md-6{
+        width: calc(100%/12*6);
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    /* laptop */
+    .container{
+        width: 80%;
+        max-width: 1052px;
+    }
+    .d-lg-block{
+        display: block;
+    }
+    .d-lg-none{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    /* desktop */
+
+
+}
+
+/* #endregion responsive */
