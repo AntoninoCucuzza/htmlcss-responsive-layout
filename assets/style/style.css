@@ -274,6 +274,9 @@ display:none;
     object-fit: cover;
     margin: 1rem;
 }
+.o-fit{
+    object-fit: cover;
+}
 /* /img */
 
 .row{
