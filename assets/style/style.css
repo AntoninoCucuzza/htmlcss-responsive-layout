@@ -27,6 +27,11 @@ nav{
 a{
     text-decoration: none;
 }
+footer{
+    background-color: var(--rsp-footer);
+    color: var(--rsp-white);
+    
+}
 /* #endregion common */
 
 /* #region header */
@@ -35,6 +40,9 @@ a{
 }
 .a-white{
     color: var(--rsp-white);
+}
+.a-purple{
+    color: var(--rsp-violet);
 }
 .a-black{
     color: var(--rsp-black);
@@ -178,7 +186,10 @@ a{
     color: var(--rsp-violet);
 }
 .about-us h2{
-    font-size: 2.25rem;
+    font-size: 2rem;
+}
+.card_about_us{
+    padding: 1rem;
 }
 .card_about_us>p{
     line-height: 2rem;
@@ -190,8 +201,35 @@ a{
 }
 /* #endregion About Us */
 
+/* #region free */
+.free{
+    background-color: var(--rsp-violet);
+    color: var(--rsp-white);
+    text-align: center;
+}
+.start{
+    font-weight: 300;
+}
+.simple{
+    font-size: 2rem;
+}
+.special{
+    color: var(--rsp-special);
+    font-size: 4rem;
+}
+.card_free> p{
+    line-height: 2rem;
+}
+.underline{
+    text-decoration: underline;
+}
+/* #endregion free */
 
 /* #endregion main */
+
+/* #region footer */
+
+/* #endregion footer */
 
 /* #region utility */
 
@@ -258,7 +296,7 @@ display:none;
 }
 /* /flex */
 .btn{
-    border-radius: 25px;
+    border-radius: 45px;
     text-align: center;
 }
 .btn-primary{
@@ -288,6 +326,11 @@ display:none;
     padding: 0.5rem 1rem;
     width: fit-content;
     margin-top: 1rem; 
+}
+.btn_free{
+    background-color: var(--rsp-white);
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
 }
 /* /btn */
 .p-absolute{
@@ -329,6 +372,11 @@ display:none;
 
 @media screen and (min-width:420px){
     /* mobile */
+    .container-sm{
+        width: 80%;
+        max-width: 420px;
+        margin: auto;
+    }
 
     .container-lg{
         width: 80%;
