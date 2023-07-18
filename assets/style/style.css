@@ -174,7 +174,20 @@ a{
 
 
 /* #region About Us */
-
+.about-us h1, .about-us h2{
+    color: var(--rsp-violet);
+}
+.about-us h2{
+    font-size: 2.25rem;
+}
+.card_about_us>p{
+    line-height: 2rem;
+}
+.virgole{
+    color: var(--rsp-violet);
+    right: 30px;
+    top: 35px;
+}
 /* #endregion About Us */
 
 
@@ -269,6 +282,12 @@ display:none;
     padding: 0.5rem 4rem;
     width: fit-content;
     margin-top: 2rem;    
+}
+.btn_about_us{
+    background-color: var(--rsp-violet);
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    margin-top: 1rem; 
 }
 /* /btn */
 .p-absolute{
