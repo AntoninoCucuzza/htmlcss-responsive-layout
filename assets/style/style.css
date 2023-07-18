@@ -261,15 +261,22 @@ display:none;
 @media screen and (min-width:420px){
     /* mobile */
 
-   /*  .col-12{
-        width: 100%;
-    } */
-    
+    .container-lg{
+        width: 80%;
+        max-width: 420px;
+        margin: auto;
+    }
+
 }
 
 @media screen and (min-width:768px){
     /* tablet */
     .container{
+        width: 90%;
+        max-width: 1024px;
+        margin: auto;
+    }
+    .container-lg{
         width: 90%;
         max-width: 1024px;
         margin: auto;
@@ -321,6 +328,12 @@ display:none;
         max-width: 1152px;
         margin: auto;
     }
+   
+    .container-lg{
+        width: 80%;
+        max-width: 920px;
+        margin: auto;
+    }
     .d-lg-block{
         display: block;
     }
@@ -328,10 +341,16 @@ display:none;
         display: none;
     }
 
+    
+    .card_planning{
+        margin-top: 15rem;
+    }
    
     /* #region utility */
   
-   
+   .col-lg-6{
+    width: calc(100%/12*6);
+   }
     /* /col */
 
     /* #endregion utility */
